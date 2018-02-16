@@ -6,7 +6,7 @@
 		на нужную страницу
 	 ************************************* */
 
-	class Application {
+	class Router {
 		
 		// тут будет хранится controller который надо вызвать; 
 		public $url_controller = null;
