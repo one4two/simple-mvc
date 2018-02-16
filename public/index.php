@@ -17,7 +17,6 @@
 	// пока подключаем все ручками. 
 	require_once APP . 'core/controller.php';
 	
-	
 	// создаем обьект приложения (роутер)
 	$app = new Application;
 ?>
