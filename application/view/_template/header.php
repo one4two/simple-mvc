@@ -3,7 +3,7 @@
 	<head>
 		<title>MVC Simple</title>
 		<meta charset="utf-8" />
-		<link href="<?php echo URL; ?>/css/mystyle.css" rel="stylesheet" />
+		<link href="<?= URL ?>/css/mystyle.css" rel="stylesheet" />
 	</head>
 <body>
 	<!-- Шапка сайта -->
@@ -13,7 +13,7 @@
 			<a href="<?= URL ?>">Главная</a>
 			<a href="<?= URL ?>/?c=home&act=actionOne">actionOne</a>
 			<a href="<?= URL ?>/?c=home&act=actionTwo">actionTwo</a>
-			<a href="<?= URL ?>/?c=news">Новости</a>
+			<a href="<?= URL ?>/?c=film">Фильмы</a>
 		</nav`>		
 	</header>
 	

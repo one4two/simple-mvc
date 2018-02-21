@@ -17,21 +17,22 @@ class Controller {
 	// б.к.
 	public function __construct() {
 		$this->createDatabaseConn();
-		//$this->loadModel();
+		$this->loadModel();
 	}
 	
 	// создание соединения
 	private function createDatabaseConn() {
-		$this->conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_TYPE);
+		$this->conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 		if($this->conn->connect_errno) {
-			echo "Can't connect to Database: " . $this->conn->connect_error;
+			echo "<b>Can't connect to Database:</b> " . $this->conn->connect_error;
 		}		
 	}
 	
 	// загрузка модели
 	public function loadModel() {
-		require_once APP . 'model/model.php';
+		require APP . 'model/model.php';
 		$this->model = new Model($this->conn);
+		//var_dump($this->model);
 	}		
 }	
 ?>
