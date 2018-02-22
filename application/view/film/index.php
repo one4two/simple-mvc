@@ -62,10 +62,17 @@
 					<th>Режиссёр</th>
 				</tr>
 			</thead>
-			<tbody class="tfilm">
-				<?php foreach($films as $data): ?>
+			<tbody class="tfilm">				
 				<tr>
-					
+					<td><?= $films[0]['film_name']?></td>
+					<td><?= $films[0]['Janres']?></td>
+					<td><?= $films[0]['year']?></td>					
+					<td><?= $films[0]['Countries']?></td>
+					<td><?= $films[0]['Producers']?></td>
+				</tr>
+				<?php if(isset($films[0])) unset($films[0]); ?>
+				<?php foreach($films as $data): ?>
+				<tr>					
 					<td><?= $data['film_name']?></td>
 					<td><?= $data['Janres']?></td>
 					<td><?= $data['year']?></td>					
