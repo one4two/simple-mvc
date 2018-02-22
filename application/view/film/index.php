@@ -68,7 +68,7 @@
 					<td><?= $films[0]['Janres']?></td>
 					<td><?= $films[0]['year']?></td>					
 					<td><?= $films[0]['Countries']?></td>
-					<td><?= $films[0]['Producers']?></td>
+					<td><?= $films[0]['Producers']?></td>					
 				</tr>
 				<?php if(isset($films[0])) unset($films[0]); ?>
 				<?php foreach($films as $data): ?>
