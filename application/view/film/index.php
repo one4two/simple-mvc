@@ -17,7 +17,11 @@
 	</p>
 	<form action="?c=film&act=addFilm" method="POST">
 		<span>Название: <input type="text" placeholder=". . ." name="name" required /></span>
-		
+		<!-- 
+			Все данные которые используются на этой странице приходят
+			из файла-контроллера Film, метод index()
+			application/controller/film.php
+		-->
 		<span>Жанр: 
 			<select name="s_janr">
 				<?php foreach($janres as $data): ?>
