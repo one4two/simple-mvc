@@ -15,8 +15,7 @@
 	define('URL', URL_PROTOCOL . URL_DOMAIN . URL_SUB_FOLDER);
 	
 	// конфигурация базы данных
-	define('DB_HOST','127.0.0.1');
-	//define('DB_TYPE','mysql');
+	define('DB_HOST','127.0.0.1');	
 	define('DB_NAME','kinoteka');
 	define('DB_USER','root');
 	define('DB_PASS','');
